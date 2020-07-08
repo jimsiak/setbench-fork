@@ -38,6 +38,7 @@ public:
 
     KeyGeneratorZipfData(int _maxKey, double _alpha) {
 //        std::cout<<"start KeyGeneratorZipfData"<<std::endl;
+        theta = _alpha;
         maxKey = _maxKey;
 
         // Compute normalization constant c for implied key range: [1, maxKey]
